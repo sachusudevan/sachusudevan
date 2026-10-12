@@ -1,64 +1,71 @@
-<!-- Animated header -->
+<!-- Header: binary-art avatar + terminal. Regenerate with: python3 scripts/build_header.py <photo> -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Hi%2C%20I'm%20Sachu%20S&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer&descAlignY=58&descSize=20" alt="Header" width="100%" />
+  <img src="./assets/header.svg" alt="Sachu S — Full Stack Developer" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/sachusudevan">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Full+Stack+Developer;Python+%7C+Django+%7C+GraphQL;JavaScript+%7C+React+Native;Building+scalable+backends+%26+APIs" alt="Typing SVG" />
-  </a>
+  <a href="https://github.com/sachusudevan?tab=followers"><img src="https://img.shields.io/github/followers/sachusudevan?label=followers&style=for-the-badge&logo=github&labelColor=0d1117&color=39ff14" alt="Followers" /></a>
+  <a href="https://github.com/sachusudevan?tab=repositories"><img src="https://img.shields.io/badge/status-open_to_collaborate-39ff14?style=for-the-badge&labelColor=0d1117" alt="Open to collaborate" /></a>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=sachusudevan&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
-  <a href="https://github.com/sachusudevan?tab=followers"><img src="https://img.shields.io/github/followers/sachusudevan?label=Followers&style=flat&color=0e75b6" alt="Followers" /></a>
-</p>
+### `~/sachusudevan $ cat about_me.py`
 
----
+```python
+class SachuS(FullStackDeveloper):
+    """Builds backends, APIs and the apps that use them."""
 
-## 👨‍💻 About Me
+    def __init__(self):
+        self.name = "Sachu S"
+        self.github = "@sachusudevan"
+        self.role = "Full Stack Developer"
+        self.stack = {
+            "backend":   ["Python", "Django", "GraphQL", "REST APIs", "JWT Auth"],
+            "frontend":  ["JavaScript", "React"],
+            "mobile":    ["React Native"],
+            "databases": ["PostgreSQL", "MySQL"],
+            "tools":     ["Git", "Docker", "Linux"],
+        }
+        self.projects = [
+            "GraphQL JWT Authentication (Django)",
+            "Food Delivery App — Backend & API",
+            "Doctors Appointment Booking — Backend",
+        ]
+        self.learning = ["System Design", "Cloud Deployments", "Clean Architecture"]
 
-- 🚀 Full Stack Developer building backends, REST & GraphQL APIs and mobile apps
-- 🐍 Most of my backend work is in **Python / Django** — auth (JWT), food-delivery and appointment-booking platforms
-- 📱 Front end and mobile with **JavaScript** and **React Native**
-- 🌱 Always learning: system design, cloud deployments and clean architecture
-- 🤝 Open to collaborating on backend, API and full-stack projects
-- 📫 Reach me via [GitHub](https://github.com/sachusudevan)
+    def say_hi(self) -> str:
+        return "Thanks for stopping by! Let's build something together 🚀"
 
----
 
-## 🛠️ Tech Stack
+if __name__ == "__main__":
+    print(SachuS().say_hi())
+```
+
+### `~/sachusudevan $ ls ./tech-stack`
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,django,graphql,js,react,nodejs,postgres,mysql,docker,git,github,linux,vscode&perline=7" alt="Tech stack" />
+    <img src="https://skillicons.dev/icons?i=python,django,graphql,js,react,nodejs,postgres,mysql,docker,git,github,linux,vscode&perline=7&theme=dark" alt="Tech stack" />
   </a>
 </p>
 
----
-
-## 🧊 3D Contribution Graph
+### `~/sachusudevan $ git log --graph --3d`
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" width="100%" />
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D contribution graph" width="100%" />
 </p>
 
----
-
-## 📊 GitHub Stats
+### `~/sachusudevan $ git stats --all`
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=sachusudevan&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachusudevan&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sachusudevan&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&count_private=true" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachusudevan&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&langs_count=6" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=sachusudevan&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com?user=sachusudevan&theme=chartreuse-dark&hide_border=true&background=0d1117" alt="GitHub streak" />
 </p>
 
----
-
-## 🐍 Contribution Snake
+### `~/sachusudevan $ ./snake --eat contributions`
 
 <p align="center">
   <picture>
@@ -68,7 +75,6 @@
   </picture>
 </p>
 
-<!-- Animated footer -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" alt="Footer" width="100%" />
-</p>
+```bash
+$ exit 0   # 01010100 01101000 01100001 01101110 01101011 01110011  →  "Thanks" for visiting 👋
+```
